@@ -1,4 +1,4 @@
-## 💣 Cenário 6: Automação e Resposta a Incidentes (Log Pipeline)
+## 💣 Cenário 1: Bomba de arquivos e organização eficiente
 
 Este cenário simula uma resposta a incidentes onde precisamos isolar arquivos de log específicos criados recentemente e manter uma trilha de auditoria de cada arquivo movido.
 
