@@ -7,6 +7,8 @@ Este cenário simula uma resposta a incidentes onde precisamos isolar arquivos d
 2. **Filtragem Inteligente:** Localizar apenas arquivos `.log` criados nos últimos 10 minutos.
 3. **Isolamento Seguro:** Mover os arquivos para uma pasta de quarentena sem deletar dados.
 4. **Auditoria (Log do Log):** Registrar cada movimentação em um arquivo externo em tempo real.
+
+   
 ![Demonstração do Script](gif1.gif)
 ### Resolução Técnica:
 
