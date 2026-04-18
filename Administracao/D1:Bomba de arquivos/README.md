@@ -19,3 +19,5 @@ touch file{1..500}.txt file{1..500}.log
 
 # 2. Execução da Pipeline de Automação
 find . -name "*.log" -mmin -10 -type f -print0 | xargs -0 -I {} mv -v {} /tmp/quarentena/ | tee movimentacao.txt
+
+![Demonstração do Script](gif2.gif)
