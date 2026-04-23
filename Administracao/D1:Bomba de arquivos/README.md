@@ -26,7 +26,7 @@ find . -name "*.log" -type f | xargs -I {} mv -v {} /tmp/quarentena/ | tee movim
 
 Em cenarios reais as vezes podem vir bombas de arquivos indesejados, é importante deslocar-los de forma corrata, abaixo temos outro cenario:
 ### Cenario 2 :
-1. **Masa de daods recentes:** Uma massa de dados foi gerada em um local indevido.
+1. **Massa de daods recentes:** Uma massa de dados foi gerada em um local indevido.
 2. **Filtragem Inteligente:** filtre e isole os log's que foram GERADOS NOS ULTIMOS 10 minutos.
 3. **Isolamento Seguro:** Mover os arquivos para uma pasta de quarentena sem deletar dados.
 4. **Auditoria (Log do Log):** Registrar cada movimentação em um arquivo externo em tempo real.
