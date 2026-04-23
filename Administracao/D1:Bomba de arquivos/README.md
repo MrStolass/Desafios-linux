@@ -30,3 +30,11 @@ Em cenarios reais as vezes podem vir bombas de arquivos indesejados, é importan
 2. **Filtragem Inteligente:** filtre e isole os log's que foram GERADOS NOS ULTIMOS 10 minutos.
 3. **Isolamento Seguro:** Mover os arquivos para uma pasta de quarentena sem deletar dados.
 4. **Auditoria (Log do Log):** Registrar cada movimentação em um arquivo externo em tempo real.
+
+![Demonstração do Script](gif3.gif)
+
+Ao adicionar a flag "cmin" podemos manipular o arquivo de acrodo com o seu tempo de criação, assim podemos limpar ou movimentar dados com mais proficiencia e precisão. 
+```bash
+#1.movimentando arquivos com data de crianças menor que 10 minutos: 
+find . -name "*.log" -type f -cmin -10 | xargs -I {} mv -v {} /tmp/quarentena/ | tee movimentacao.txt
+
