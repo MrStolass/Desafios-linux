@@ -31,7 +31,7 @@ Em cenarios reais as vezes podem vir bombas de arquivos indesejados, é importan
 3. **Isolamento Seguro:** Mover os arquivos para uma pasta de quarentena sem deletar dados.
 4. **Auditoria (Log do Log):** Registrar cada movimentação em um arquivo externo em tempo real.
 
-![Demonstração do Script](gif3.gif)
+![Demonstração do Script](gif4.gif)
 
 Ao adicionar a flag "cmin" podemos manipular o arquivo de acrodo com o seu tempo de criação, assim podemos limpar ou movimentar dados com mais proficiencia e precisão. 
 ```bash
