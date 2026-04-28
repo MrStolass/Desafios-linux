@@ -1,1 +1,35 @@
+```markdown
+# O KERNEL SOB ATAQUE, DRIVE INTERNET
 
+Este cenário simula uma falha crítica de infraestrutura ou uma sabotagem interna, onde um driver vital do sistema (placa de rede) é removido. O objetivo é realizar o diagnóstico via logs do Kernel e restaurar a conectividade sem reiniciar a máquina.
+
+### Cenário:
+1.  **O Blackout:** Identificar o driver (módulo) da placa de rede com `lspci -k` e `lsmod`.
+2.  **A Sabotagem:** Remover o driver em tempo de execução, simulando uma queda de rede total.
+3.  **A Investigação:** Analisar o `dmesg` para ver o que o Kernel reportou no momento da falha.
+4.  **A Restauração:** Utilizar o `modprobe` para subir a rede novamente e validar com `inxi -n`.
+
+![Demonstração do Blackout](gif_blackout.gif)
+
+### Resolução Técnica:
+
+```bash
+# 1. Identificando o driver de rede ativo
+# O lspci -k mostra o 'Kernel driver in use'
+lspci -k | grep -A 3 -i "network"
+
+# Listando se o módulo está carregado na memória
+lsmod | grep <seu_driver>
+
+# 2. A Sabotagem: Removendo o driver (O pânico no terminal)
+# Substitua <seu_driver> pelo nome encontrado (ex: e1000e, r8169)
+sudo modprobe -r <seu_driver>
+
+# 3. A Investigação: Lendo as mensagens do Kernel
+dmesg | tail -n 20
+
+# 4. A Restauração: Subindo o driver novamente
+sudo modprobe <seu_driver>
+
+# Validando se a rede voltou ao normal
+inxi -n
