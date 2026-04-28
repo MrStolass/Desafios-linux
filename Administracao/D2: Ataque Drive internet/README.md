@@ -1,4 +1,4 @@
-# 💀 DESAFIO 04 — O KERNEL SOB ATAQUE
+# O KERNEL SOB ATAQUE, ATAQUE A INTERNET
 
 Este cenário simula uma falha crítica de infraestrutura ou uma sabotagem interna, onde um driver vital do sistema (placa de rede) é removido. O objetivo é realizar o diagnóstico via logs do Kernel e restaurar a conectividade sem reiniciar a máquina.
 
