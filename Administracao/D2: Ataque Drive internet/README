@@ -1,17 +1,19 @@
-
-# O KERNEL SOB ATAQUE, DRIVE INTERNET
+# 💀 DESAFIO 04 — O KERNEL SOB ATAQUE
 
 Este cenário simula uma falha crítica de infraestrutura ou uma sabotagem interna, onde um driver vital do sistema (placa de rede) é removido. O objetivo é realizar o diagnóstico via logs do Kernel e restaurar a conectividade sem reiniciar a máquina.
 
-### Cenário:
-1.  **O Blackout:** Identificar o driver (módulo) da placa de rede com `lspci -k` e `lsmod`.
-2.  **A Sabotagem:** Remover o driver em tempo de execução, simulando uma queda de rede total.
-3.  **A Investigação:** Analisar o `dmesg` para ver o que o Kernel reportou no momento da falha.
-4.  **A Restauração:** Utilizar o `modprobe` para subir a rede novamente e validar com `inxi -n`.
+### 🚩 Cenário:
+
+1. **O Blackout:** Identificar o driver (módulo) da placa de rede com `lspci -k` e `lsmod`.
+2. **A Sabotagem:** Remover o driver em tempo de execução, simulando uma queda de rede total.
+3. **A Investigação:** Analisar o `dmesg` para ver o que o Kernel reportou no momento da falha.
+4. **A Restauração:** Utilizar o `modprobe` para subir a rede novamente e validar com `inxi -n`.
 
 ![Demonstração do Blackout](gif_blackout.gif)
 
-### Resolução Técnica:
+---
+
+### 🛠️ Resolução Técnica:
 
 ```bash
 # 1. Identificando o driver de rede ativo
