@@ -9,7 +9,7 @@ Este cenário simula uma falha crítica de infraestrutura ou uma sabotagem inter
 3. **A Investigação:** Analisar o `dmesg` para ver o que o Kernel reportou no momento da falha.
 4. **A Restauração:** Utilizar o `modprobe` para subir a rede novamente e validar com `inxi -n`.
 
-![Demonstração do Blackout](gif_blackout.gif)
+![Demonstração do Blackout](100.gif)
 
 ---
 
