@@ -12,6 +12,8 @@ Este cenário simula uma falha crítica de infraestrutura ou uma sabotagem inter
 ![Demonstração do Blackout](100.gif)
 
 ![Demonstração do Blackout](2.gif)
+
+
 demonstração em teste, em preogresso
 
 
