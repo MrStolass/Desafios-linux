@@ -7,11 +7,11 @@ Este repositório contém uma trilha de aprendizado prática sobre administraç�
 O conteúdo está organizado da seguinte forma:
 
 - `missões/`: Desafios estruturados simulando tarefas reais de um analista.
-- 
+  
 - `exercícios/`: Práticas divididas por níveis (Fundamentos, Processos, Hardware).
-- 
+  
 - `cenários/`: Estudos de caso para resolução de problemas (Troubleshooting).
-- 
+  
 - `scripts/`: Exemplos de automação e comandos úteis.
 
 ## 🚀 Como usar este guia
