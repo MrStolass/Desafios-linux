@@ -5,7 +5,10 @@ Esta seção contém exercícios graduais para consolidar o conhecimento em admi
 ## 🧪 🔰 Nível 1: Fundamentos (Usuários e Grupos)
 O objetivo aqui é simular o ambiente de uma empresa.
 
+
+
 | Exercício | Descrição | Comando Sugerido |
+
 | :--- | :--- | :--- |
 | **E1** | Criar usuários `dev1`, `dev2`, `admin1` e grupos `devs`, `admins`. | `useradd`, `groupadd` |
 | **E2** | Criar diretório `/projeto` acessível apenas por `devs`. | `chown`, `chmod` |
@@ -13,8 +16,10 @@ O objetivo aqui é simular o ambiente de uma empresa.
 | **E4** | Configurar acesso `sudo` para `admin1` e bloquear para `devs`. | `visudo` |
 | **E5** | Excluir o usuário `dev2` e seu diretório home. | `userdel -r dev2` |
 
+
 ## ⚙️ 🔥 Nível 2: Processos (Vida Real)
 Práticas para lidar com processos, prioridades e monitoramento.
+
 
 | Exercício | Descrição | Comando Sugerido |
 | :--- | :--- | :--- |
@@ -26,6 +31,7 @@ Práticas para lidar com processos, prioridades e monitoramento.
 | **E11** | Diferenciar sinais de encerramento (`kill`, `kill -9`). | `kill -SIGTERM`, `kill -9` |
 | **E12** | Salvar logs e exibir na tela simultaneamente. | `tee` |
 | **E13** | Manipular múltiplos arquivos em lote. | `xargs` |
+
 
 ## 🖥️ ⚡ Nível 3: Hardware e Sistema
 Investigação e diagnóstico de componentes físicos e módulos do kernel.
