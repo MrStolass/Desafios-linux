@@ -5,8 +5,6 @@ Esta seção contém exercícios graduais para consolidar o conhecimento em admi
 ## 🧪 🔰 Nível 1: Fundamentos (Usuários e Grupos)
 O objetivo aqui é simular o ambiente de uma empresa.
 
-
-
 | Exercício | Descrição | Comando Sugerido |
 
 | :--- | :--- | :--- |
@@ -20,7 +18,6 @@ O objetivo aqui é simular o ambiente de uma empresa.
 ## ⚙️ 🔥 Nível 2: Processos (Vida Real)
 Práticas para lidar com processos, prioridades e monitoramento.
 
-
 | Exercício | Descrição | Comando Sugerido |
 | :--- | :--- | :--- |
 | **E6** | Criar, listar e encerrar processos `sleep`. | `ps`, `kill`, `pkill` |
@@ -32,11 +29,10 @@ Práticas para lidar com processos, prioridades e monitoramento.
 | **E12** | Salvar logs e exibir na tela simultaneamente. | `tee` |
 | **E13** | Manipular múltiplos arquivos em lote. | `xargs` |
 
-
 ## 🖥️ ⚡ Nível 3: Hardware e Sistema
 Investigação e diagnóstico de componentes físicos e módulos do kernel.
 
-| Exercício | Descrição | Comando Sugerido |
+| Exercício | Descrição | Comando Sugerido | testebalea
 | :--- | :--- | :--- |
 | **E14** | Identificar CPU, USB e Placa de Rede. | `lscpu`, `lsusb`, `lspci` |
 | **E15** | Analisar mensagens de boot e logs do sistema. | `dmesg | less` |
