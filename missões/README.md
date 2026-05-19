@@ -35,3 +35,11 @@ Investigação de hardware e diagnóstico de sistema.
 - **Drivers/Módulos**: `lsmod`, `modprobe`, `modinfo`
 - **Logs de Kernel**: `dmesg | grep -i "error"`
 - **Hardware PCI**: `lspci`
+
+- Desafio 1: O "Sequestro" de Repositório (Foco: Segurança/Auditoria)
+Cenário: Um servidor de monitoramento começou a apresentar lentidão. Você suspeita que alguém adicionou um repositório malicioso que substituiu o comando ls por uma versão alterada que esconde arquivos de um invasor.
+Use o comando apt policy coreutils para verificar de quais repositórios o pacote básico do sistema está vindo.
+Identifique se existe alguma versão vinda de um PPA ou site que não seja o oficial do Ubuntu (archive.ubuntu.com).
+A Missão: Se houver um repositório suspeito, descubra como forçar o sistema a reinstalar a versão original do repositório oficial, mesmo que a versão do "invasor" seja um número de versão maior (ex: Invasor tem versão 9.1 e Oficial tem 8.3).
+Dica: Pesquise sobre "Apt Pinning" ou como especificar a versão no apt install.
+
